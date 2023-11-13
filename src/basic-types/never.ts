@@ -4,6 +4,13 @@
 
 // Now let's do that in TS shall we ?
 
+// const str: never = 'hello';
+
+// const str: never = {};
+// const str: never = false;
+
+// What about functions x never ?
+
 type Locations = 'Greece' | 'Italy' | 'Spain';
 
 function getCountryLocation(country: Locations) {
