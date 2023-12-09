@@ -9,8 +9,8 @@ const customerData: {
   email: string;
 } = {
   id: 1,
-  username: "customer123",
-  email: "customer@example.com",
+  username: 'customer123',
+  email: 'customer@example.com',
 };
 
 // Improving code readability with interfaces
@@ -26,6 +26,6 @@ interface ICustomer {
 
 const customerDataWithInterface: ICustomer = {
   id: 1,
-  username: "customer123",
-  email: "customer@example.com",
+  username: 'customer123',
+  email: 'customer@example.com',
 };

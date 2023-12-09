@@ -16,7 +16,7 @@ const additionFunction: IAddition = {
   },
 };
 
-const result = additionFunction.add(5, 3); // 8
+const result = additionFunction.add(5, 3); // Output: 8
 
 // Function signatures in interfaces define the structure of functions that objects must follow when implementing the interface.
 // In this example, we've defined a function signature for addition in the IAddition interface,
