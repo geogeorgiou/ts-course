@@ -107,5 +107,6 @@ type ReadOnly<T> = { readonly [P in keyof T]: T[P] };
 // - when defining an alias for primitive types (string, boolean, number, bigint, symbol).
 // - for advanced type manipulations like unions, intersections, tuples and working with
 // diverse data types.
-// In practice, a combination of both interfaces and types is often used to utilize the strengths
-// of each in TypeScript projects.
+// While interfaces and types have distinct use cases,
+// TypeScript's evolving features and community practices are increasingly favoring types for their advanced capabilities.
+// However, choosing between interfaces and types should be guided by the specific requirements of the project and the functionality needed.

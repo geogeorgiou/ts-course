@@ -14,7 +14,8 @@
 
 // Task 3: Function Type in Interface for Simple Calculation
 // Add a method signature to the 'IUniStudent' interface.
-// The method, named 'getYearsStudied', should accept an enrollment year and return the number of years studied.
+// The method, named 'getYearsStudied', should accept an enrollment year
+// of type number and return the number of years studied.
 
 // Task 4: Create an object using the extended Interface
 // Create a 'uniStudent' object that implements the extended interface.

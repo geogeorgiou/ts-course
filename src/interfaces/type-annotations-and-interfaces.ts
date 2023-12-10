@@ -1,8 +1,6 @@
 // Interfaces and improving code readability
 
-// Long type annotation without interfaces
-// In the absence of interfaces, the declaration of types and values within a single object
-// can lead to code that appears cluttered and less maintainable.
+// Long type annotation is shown as inline declaration of type 
 
 const customerData: {
   id: number;
@@ -14,16 +12,13 @@ const customerData: {
   email: 'customer@example.com',
 };
 
-// Improving code readability with interfaces
-// To enhance code readability, we can start by defining a reusable interface for customers.
+// Reusable interface which improves code readability (preferred way)
 
 interface ICustomer {
   id: number;
   username: string;
   email: string;
 }
-
-// Now, we can utilize the 'ICustomer' interface to define a customer object in a cleaner and more organized manner.
 
 const customerDataWithInterface: ICustomer = {
   id: 1,
