@@ -11,11 +11,8 @@ class FinanceEmployeePrivate extends Employee {
 }
 
 class Reptiles extends Animal {
-  numberOfLegs: number;
-
-  constructor(animalType: string, color: string, numberOfLegs: number) {
+  constructor(animalType: string, color: string, private numberOfLegs: number) {
     super(animalType, color);
-    this.numberOfLegs = numberOfLegs;
   }
 
   private doSlithering(): void {
@@ -31,24 +28,18 @@ const snake = new Reptiles('snake', 'grey', 0);
 //private methods and values can be accessed only within the class.
 //in order to access one we must use a method that have access
 
-// snake.doSlithering(); Property 'doSlithering' is private and only accessible within class 'Reptiles'
+// snake.doSlithering(); Error: Property 'doSlithering' is private and only accessible within class 'Reptiles'
+// but executing doAction will run the doSlithering() since it has access
 snake.doAction();
 
 //A private value means that is accessed only within the class and not by child classes or other
 class BeingPrivate {
-  private type: string;
-
-  constructor(type: string) {
-    this.type = type;
-  }
+  constructor(private type: string) {}
 }
 
 class Human2 extends BeingPrivate {
-  public name: string;
-
-  constructor(type: string, name: string) {
+  constructor(type: string, public name: string) {
     super(type);
-    this.name = name;
   }
   print(): void {
     // this.type; error!

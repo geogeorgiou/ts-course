@@ -19,22 +19,15 @@ const financeEmployee = new FinanceEmployee('AB123');
 
 //A protected value means that is accessed only within the class or child classes methods
 class BeingProtected {
-  protected type: string;
-
-  constructor(type: string) {
-    this.type = type;
-  }
+  constructor(protected type: string) {}
 }
 
 class Human extends BeingProtected {
-  public name: string;
-
-  constructor(type: string, name: string) {
+  constructor(type: string, protected name: string) {
     super(type);
-    this.name = name;
   }
   print(): void {
-    this.type;
+    console.log(this.type);
   }
 }
 const person1 = new Human('human', 'John');
