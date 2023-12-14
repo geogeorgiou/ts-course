@@ -35,5 +35,5 @@ class Human2 extends BeingPrivate {
     // this.type; error!
   }
 }
-const person2 = new Human2('human', 'John');
-person2.print();
+const personObject2 = new Human2('human', 'John');
+personObject2.print();

@@ -30,5 +30,5 @@ class Human extends BeingProtected {
     console.log(this.type);
   }
 }
-const person1 = new Human('human', 'John');
-person1.print();
+const personObject1 = new Human('human', 'John');
+personObject1.print();
