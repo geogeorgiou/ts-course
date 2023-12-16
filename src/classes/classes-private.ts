@@ -1,6 +1,6 @@
 //private classes
 
-class Reptiles extends Animal {
+class Reptiles extends AnimalClass {
   constructor(animalType: string, color: string, private numberOfLegs: number) {
     super(animalType, color);
   }

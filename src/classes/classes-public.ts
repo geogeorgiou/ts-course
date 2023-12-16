@@ -19,7 +19,7 @@ class Person {
 const jon = new Person('John', 35);
 
 //class methods
-class Animal {
+class AnimalClass {
   constructor(public animalType: string, public color: string) {}
 
   doAction(): void {
@@ -27,7 +27,7 @@ class Animal {
   }
 }
 
-const catAnimal = new Animal('cat', 'Black');
+const catAnimal = new AnimalClass('cat', 'Black');
 catAnimal.doAction();
 
 //class inheritance
@@ -38,7 +38,7 @@ The class which inherits properties and methods is called the child class And th
 */
 
 //using super we can pass values to the parent class constructor
-class Mammal extends Animal {
+class Mammal extends AnimalClass {
   numberOfLegs: number;
 
   constructor(animalType: string, color: string, numberOfLegs: number) {
