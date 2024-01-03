@@ -6,10 +6,8 @@
 
 // Syntax: Extract<Type, Union>
 
-namespace Extract {
-  type Animal = 'Dog' | 'Cat' | 'Bird' | 'Fish';
-  type CommonPets = Extract<Animal, 'Dog' | 'Cat'>;
+type Animal = 'Dog' | 'Cat' | 'Bird' | 'Fish';
+type CommonPets = Extract<Animal, 'Dog' | 'Cat'>;
 
-  const myPet: CommonPets = 'Dog';
-  // In this example, only the 'Dog' and 'Cat' types are included in the 'CommonPets' type.
-}
+const myPet: CommonPets = 'Dog';
+// In this example, only the 'Dog' and 'Cat' types are included in the 'CommonPets' type.
