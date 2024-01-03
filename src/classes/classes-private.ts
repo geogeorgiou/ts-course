@@ -1,5 +1,6 @@
-//private classes
+import { AnimalClass } from './classes-public';
 
+//private classes
 class Reptiles extends AnimalClass {
   constructor(animalType: string, color: string, private numberOfLegs: number) {
     super(animalType, color);
