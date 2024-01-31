@@ -5,11 +5,9 @@
 
 // Syntax: ReturnType<Type>
 
-namespace ReturnType {
-  type MathOperation = (a: number, b: number) => number;
-  type ResultType = ReturnType<MathOperation>;
+type MathOperation = (a: number, b: number) => number;
+type ResultType = ReturnType<MathOperation>;
 
-  const add: MathOperation = (a, b) => a + b;
-  const result: ResultType = add(3, 7);
-  // In this example, 'ResultType' is the type of the value returned by the 'MathOperation' function type, which is 'number'.
-}
+const add: MathOperation = (a, b) => a + b;
+const result: ResultType = add(3, 7);
+// In this example, 'ResultType' is the type of the value returned by the 'MathOperation' function type, which is 'number'.

@@ -8,10 +8,8 @@
 
 // Syntax: Exclude<Type, ExcludedUnion>
 
-namespace Exclude {
-  type Animal = 'Dog' | 'Cat' | 'Bird' | 'Fish';
-  type DomesticAnimal = Exclude<Animal, 'Bird' | 'Fish'>;
+type Animal = 'Dog' | 'Cat' | 'Bird' | 'Fish';
+type DomesticAnimal = Exclude<Animal, 'Bird' | 'Fish'>;
 
-  const myPet: DomesticAnimal = 'Dog';
-  // In this example, the 'Bird' and 'Fish' types are excluded from the 'DomesticAnimal' type.
-}
+const myPet: DomesticAnimal = 'Dog';
+// In this example, the 'Bird' and 'Fish' types are excluded from the 'DomesticAnimal' type.
