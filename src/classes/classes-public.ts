@@ -19,7 +19,7 @@ class Person {
 const jon = new Person('John', 35);
 
 //class methods
-class AnimalClass {
+export class AnimalClass {
   constructor(public animalType: string, public color: string) {}
 
   doAction(): void {
