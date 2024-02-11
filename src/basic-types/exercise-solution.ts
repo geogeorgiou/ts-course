@@ -1,17 +1,17 @@
 enum QuestionCategory {
-  GeneralKnowledge,
-  Science,
-  Math,
-  Programming,
+  GeneralKnowledge = 'GeneralKnowledge',
+  Science = 'Science',
+  Math = 'Math',
+  Programming = 'Programming',
 }
 
-type TrueFalseQuestion = {
+type Question = {
   category: QuestionCategory;
   question: string;
   correctAnswer: boolean;
 };
 
-const trueFalseQuestions: TrueFalseQuestion[] = [
+const questions: Question[] = [
   {
     category: QuestionCategory.GeneralKnowledge,
     question: 'The sun is a star.',
@@ -24,13 +24,10 @@ const trueFalseQuestions: TrueFalseQuestion[] = [
   },
 ];
 
-function checkAnswer(
-  question: TrueFalseQuestion,
-  userAnswer: boolean,
-): boolean {
+function checkAnswer(question: Question, userAnswer: boolean): boolean {
   return question.correctAnswer === userAnswer;
 }
 
-checkAnswer(trueFalseQuestions[0], false);
+checkAnswer(questions[0], false);
 
-console.log(`Your answer is:`, checkAnswer(trueFalseQuestions[1], true));
+console.log(`Your answer is:`, checkAnswer(questions[1], true));
