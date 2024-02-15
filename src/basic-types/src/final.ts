@@ -24,10 +24,11 @@ const questions: Question[] = [
   },
 ];
 
-function checkAnswer(question: Question, userAnswer: boolean): boolean {
+function checkAnswer(question: Question, userAnswer: boolean) {
   return question.correctAnswer === userAnswer;
 }
 
 checkAnswer(questions[0], false);
 
-console.log(`Your answer is:`, checkAnswer(questions[1], true));
+//CODESANDBOX fix
+export default {};

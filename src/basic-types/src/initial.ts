@@ -15,3 +15,5 @@ const questions = [
 function checkAnswer(question, userAnswer) {
   return question.correctAnswer === userAnswer;
 }
+
+checkAnswer(questions[0], false);
