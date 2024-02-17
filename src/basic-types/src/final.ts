@@ -29,6 +29,3 @@ function checkAnswer(question: Question, userAnswer: boolean) {
 }
 
 checkAnswer(questions[0], false);
-
-//CODESANDBOX fix
-export default {};
