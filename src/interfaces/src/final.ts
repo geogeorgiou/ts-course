@@ -17,17 +17,17 @@ interface IUniStudent extends IStudent {
 // Task 4: Create an object using the extended Interface
 const uniStudent: IUniStudent = {
   studentId: 123,
-  fullName: "John Doe",
-  university: "Stanford University",
+  fullName: 'John Doe',
+  university: 'Stanford University',
   getYearsStudied: (enrollmentYear: number) => {
     const currentYear = new Date().getFullYear();
 
     if (enrollmentYear > currentYear) {
-      throw new Error("Enrollment year cannot be after current year.");
+      throw new Error('Enrollment year cannot be after current year.');
     }
 
     return currentYear - enrollmentYear;
-  }
+  },
 };
 
 // Task 5: Invoke the Interface Function
