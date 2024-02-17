@@ -17,6 +17,7 @@ dist-ssr
 
 # Generated files
 .cache-loader
+_examples*
 
 # Editor directories and files
 .vscode/*
